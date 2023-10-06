@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,7 +24,17 @@ namespace LanguageSchool
         public MainWindow()
         {
             InitializeComponent();
-           
+
+            //var path = @"C:\Users\212125\Downloads\Task (1)\Сессия 1\services_s_import\";
+            //foreach(var item in App.db.Service.ToArray())
+            //{
+            //    var fullPath = path + item.MainImagePath;
+            //    item.MainImage = File.ReadAllBytes(fullPath); 
+            //}
+            //App.db.SaveChanges();
+            MainFrame.Navigate(new Pages.ServiceListPage());
+
+
         }
     }
 }

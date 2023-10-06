@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LanguageSchool"
         mc:Ignorable="d"
-        Title= "Языковая школа Леарн" Height="450" Width="800">
+        Title= "Школа языков Леарн" Height="450" Width="860">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="75*"/>
-            <ColumnDefinition Width="739*"/>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="143*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="24*"/>
@@ -22,7 +22,8 @@
             <Button  x:Name="BackBtn">Назад</Button>
         <Button x:Name="ForwardBtn">Вперед</Button>
         </StackPanel>
-        <TextBlock Grid.Column="1" x:Name="TitleTb">Языковая школа "Леарн"</TextBlock>
+        <TextBlock Grid.Column="1" x:Name="TitleTb" FontSize="25" 
+        HorizontalAlignment="Center" >Школа языков "Леарн"</TextBlock>
         <Frame Grid.Row="1" Grid.Column="1" x:Name="MainFrame"></Frame>
         
         

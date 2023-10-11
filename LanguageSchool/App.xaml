@@ -14,5 +14,10 @@
             <Setter Property="Background" Value="#FF04A0FF"></Setter>
             <Setter Property="Foreground" Value="White"></Setter>
         </Style>
+        <Style TargetType="ComboBox">
+            <Setter Property="Width" Value="150"></Setter>
+            <Setter Property="Height" Value="30"></Setter>
+            <Setter Property="Margin" Value="3"></Setter>
+        </Style>
     </Application.Resources>
 </Application>

@@ -32,9 +32,31 @@ namespace LanguageSchool
             //    item.MainImage = File.ReadAllBytes(fullPath); 
             //}
             //App.db.SaveChanges();
-            MainFrame.Navigate(new Pages.ServiceListPage());
+            MainFrame.Navigate(new AuthorizatePage());
 
 
+        }
+
+        private void BackBtn_Click(object sender, RoutedEventArgs e)
+        { 
+            if (MainFrame.CanGoBack)
+        {
+            MainFrame.GoBack();
+            MainFrame.RemoveBackEntry();    
+        }
+}
+        private void ForwardBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (MainFrame.CanGoForward)
+            {
+                MainFrame.GoForward();
+            }
+        }
+
+        private void ExitBtn_Click(object sender, RoutedEventArgs e)
+        {
+            App.isAdmin = false;
+            MainFrame.Navigate(new AuthorizatePage());
         }
     }
 }

@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:LanguageSchool.Components"
              mc:Ignorable="d" 
              d:DesignHeight="150" d:DesignWidth="450">
-    <Border BorderBrush="LightGray" Width="750" BorderThickness="2" Margin="2">
+    <Border x:Name="MainBorder" BorderBrush="LightGray" Width="750" BorderThickness="2" Margin="2">
         <Grid Margin="5">
             <Grid.RowDefinitions>
                 <RowDefinition Height="6*"/>
@@ -25,13 +25,12 @@
                 <TextBlock  x:Name="CostTb" TextDecorations="Strikethrough"></TextBlock>
                 <TextBlock x:Name="CostTimeTb" ></TextBlock>
             </StackPanel>
-         
-            
-            <TextBlock Grid.Row="2" Grid.Column="1" x:Name="DiscountTb"></TextBlock>
 
+
+            <TextBlock Grid.Row="2" Grid.Column="1" x:Name="DiscountTb"></TextBlock>
             <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="3">
-                <Button>Редактировать</Button>
-                <Button>Удалить</Button>
+                <Button x:Name="EditBtn">Редактировать</Button>
+                <Button x:Name="DeleteBtn">Удалить</Button>
             </StackPanel>
         </Grid>
     </Border>

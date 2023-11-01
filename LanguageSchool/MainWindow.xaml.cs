@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using LanguageSchool.Pages;
 
 namespace LanguageSchool
 {
@@ -38,25 +39,15 @@ namespace LanguageSchool
         }
 
         private void BackBtn_Click(object sender, RoutedEventArgs e)
-        { 
-            if (MainFrame.CanGoBack)
         {
-            MainFrame.GoBack();
-            MainFrame.RemoveBackEntry();    
+            Navigation.BackPage();
         }
-}
-        private void ForwardBtn_Click(object sender, RoutedEventArgs e)
-        {
-            if (MainFrame.CanGoForward)
-            {
-                MainFrame.GoForward();
-            }
-        }
+
 
         private void ExitBtn_Click(object sender, RoutedEventArgs e)
         {
-            App.isAdmin = false;
-            MainFrame.Navigate(new AuthorizatePage());
+            Navigation.ClearHistory();
+            Navigation.NextPage(new PageComponent("Авторизация", new AuthorizatePage()));
         }
     }
 }

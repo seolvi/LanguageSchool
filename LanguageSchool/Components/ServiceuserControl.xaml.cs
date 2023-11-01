@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LanguageSchool.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -35,5 +36,23 @@ namespace LanguageSchool.Components
             CostTb.Visibility = service.CostVisibility;
             MainBorder.Background = service.ColorDiscount;
         }
+
+        private void EditBtn_Click(object sender, RoutedEventArgs e)
+        { 
+         Navigation.NextPage(new PageComponent("Редактирование услуги", new AddEditServicePage(service)));
+        }
+
+    private void DeleteBtn_Click(object sender, RoutedEventArgs e)
+    {
+        if (service.ClientService != null)
+        {
+            MessageBox.Show("ЗАПРЕЩЕНО УДАЛЯТЬ ");
+        }
+        else
+        {
+            App.db.Service.Remove(service);
+            App.db.SaveChanges();
+        }
     }
+}
 }

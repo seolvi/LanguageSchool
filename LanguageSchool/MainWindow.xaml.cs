@@ -25,7 +25,7 @@ namespace LanguageSchool
         public MainWindow()
         {
             InitializeComponent();
-
+            Navigation.mainWindow = this;
             //var path = @"C:\Users\212125\Downloads\Task (1)\Сессия 1\services_s_import\";
             //foreach(var item in App.db.Service.ToArray())
             //{
@@ -33,7 +33,7 @@ namespace LanguageSchool
             //    item.MainImage = File.ReadAllBytes(fullPath); 
             //}
             //App.db.SaveChanges();
-            MainFrame.Navigate(new AuthorizatePage());
+            Navigation.NextPage(new PageComponent("Авторизация", new AuthorizatePage()));
 
 
         }

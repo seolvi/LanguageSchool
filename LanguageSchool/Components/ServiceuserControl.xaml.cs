@@ -21,9 +21,11 @@ namespace LanguageSchool.Components
     /// </summary>
     public partial class ServiceuserControl : UserControl
     {
-        public ServiceuserControl(Service service)
+        private Service service;
+        public ServiceuserControl(Service _service)
         {
             InitializeComponent();
+            service=_service;   
             if (App.isAdmin == false)
             {
                 EditBtn.Visibility = Visibility.Hidden;
@@ -39,7 +41,7 @@ namespace LanguageSchool.Components
 
         private void EditBtn_Click(object sender, RoutedEventArgs e)
         { 
-         Navigation.NextPage(new PageComponent("Редактирование услуги", new AddEditServicePage(service)));
+         Navigation.NextPage(new PageComponent("Редактирование услуги", new AddEditeServicePage(service)));
         }
 
     private void DeleteBtn_Click(object sender, RoutedEventArgs e)

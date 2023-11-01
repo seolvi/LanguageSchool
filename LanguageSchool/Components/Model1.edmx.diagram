@@ -14,7 +14,6 @@
         <EntityTypeShape EntityType="LanguageSchool_SHS321Model.Product" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
         <EntityTypeShape EntityType="LanguageSchool_SHS321Model.ProductPhoto" Width="1.5" PointX="5.25" PointY="5.125" IsExpanded="true" />
         <EntityTypeShape EntityType="LanguageSchool_SHS321Model.ProductSale" Width="1.5" PointX="8.25" PointY="3.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="LanguageSchool_SHS321Model.ServicePhoto" Width="1.5" PointX="6" PointY="17" IsExpanded="true" />
         <EntityTypeShape EntityType="LanguageSchool_SHS321Model.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="LanguageSchool_SHS321Model.Tag" Width="1.5" PointX="6" PointY="14.125" IsExpanded="true" />
         <AssociationConnector Association="LanguageSchool_SHS321Model.FK_AttachedProduct_Product" ManuallyRouted="false" />
@@ -28,6 +27,7 @@
         <AssociationConnector Association="LanguageSchool_SHS321Model.TagOfClient" ManuallyRouted="false" />
         <EntityTypeShape EntityType="LanguageSchool_SHS321Model.Service" Width="1.5" PointX="3.75" PointY="13.125" />
         <AssociationConnector Association="LanguageSchool_SHS321Model.FK_ClientService_Service" />
+        <EntityTypeShape EntityType="LanguageSchool_SHS321Model.ServicePhoto" Width="1.5" PointX="6" PointY="16.75" />
         <AssociationConnector Association="LanguageSchool_SHS321Model.FK_ServicePhoto_Service" />
       </Diagram>
     </edmx:Diagrams>

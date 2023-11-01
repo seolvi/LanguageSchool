@@ -34,9 +34,9 @@ namespace LanguageSchool.Components
         public virtual DbSet<Product> Product { get; set; }
         public virtual DbSet<ProductPhoto> ProductPhoto { get; set; }
         public virtual DbSet<ProductSale> ProductSale { get; set; }
-        public virtual DbSet<ServicePhoto> ServicePhoto { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Tag> Tag { get; set; }
         public virtual DbSet<Service> Service { get; set; }
+        public virtual DbSet<ServicePhoto> ServicePhoto { get; set; }
     }
 }

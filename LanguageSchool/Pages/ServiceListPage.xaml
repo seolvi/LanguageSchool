@@ -25,6 +25,6 @@
             <WrapPanel Grid.Row="1" x:Name="ServicesWp"/>
         </ScrollViewer>
         <Button x:Name="AddBtn" Height="40" Grid.Row="2" Width="100" 
-            HorizontalAlignment="Left">Добавить </Button>
+            HorizontalAlignment="Left" Click="AddBtn_Click">Добавить </Button>
     </Grid>
 </Page>
